@@ -5,3 +5,10 @@ C:\Users\RC_Student_lab\source\repos\POE Part 1\obj\Debug\POE Part 1.csproj.Asse
 C:\Users\RC_Student_lab\source\repos\POE Part 1\obj\Debug\POE Part 1.csproj.CoreCompileInputs.cache
 C:\Users\RC_Student_lab\source\repos\POE Part 1\obj\Debug\POE Part 1.exe
 C:\Users\RC_Student_lab\source\repos\POE Part 1\obj\Debug\POE Part 1.pdb
+C:\Users\RC_Student_lab\Desktop\Final\POE-PART-1\POE Part 1\bin\Debug\POE Part 1.exe.config
+C:\Users\RC_Student_lab\Desktop\Final\POE-PART-1\POE Part 1\bin\Debug\POE Part 1.exe
+C:\Users\RC_Student_lab\Desktop\Final\POE-PART-1\POE Part 1\bin\Debug\POE Part 1.pdb
+C:\Users\RC_Student_lab\Desktop\Final\POE-PART-1\POE Part 1\obj\Debug\POE Part 1.csproj.AssemblyReference.cache
+C:\Users\RC_Student_lab\Desktop\Final\POE-PART-1\POE Part 1\obj\Debug\POE Part 1.csproj.CoreCompileInputs.cache
+C:\Users\RC_Student_lab\Desktop\Final\POE-PART-1\POE Part 1\obj\Debug\POE Part 1.exe
+C:\Users\RC_Student_lab\Desktop\Final\POE-PART-1\POE Part 1\obj\Debug\POE Part 1.pdb

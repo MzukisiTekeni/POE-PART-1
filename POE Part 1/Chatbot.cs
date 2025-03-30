@@ -9,10 +9,17 @@ namespace POE_Part_1
     internal class Chatbot
     {
         public string Name { get; set; }
+        public Dictionary<string,string> ChatbotResponses;
 
         public Chatbot(string Name)
         {
-            this.Name = Name; 
+            this.Name = Name;
+            ChatbotResponses = new Dictionary<string, string>{
+                {"what is your purpose","My purpose is to spread cybersecurity awarennes" },
+                {"thanks" ,"You're welcome! have a great day"},
+                {"what is password safety",
+                    "Password Safety refers to the precautions taken to keep passwords and the systems they safeguard safe from compromise or unwanted access" }
+            };
         }
        public string Respond(string UserMessage, User newUser)
        {
@@ -25,21 +32,21 @@ namespace POE_Part_1
             {
                 return "Hello! " + newUser.Name + " How can i assist you today?";
             }
-            else if (UserMessage.Contains("how are you?"))
+            else if (UserMessage.Contains("how are you"))
             {
                 return "I'm just a bot " + newUser.Name + ", but i'm doing great! what about you?";
             }
             else if(UserMessage.Contains("fine")|| UserMessage.Contains("good")|| UserMessage.Contains("okay"))
             {
-                return "How can i assist you today? " + newUser.Name;
+                return "That's good, How can i assist you today? ";
             }
-            else if (UserMessage.Contains("bye"))
+            else if (ChatbotResponses.TryGetValue(UserMessage, out string response))
             {
-                return "Goodbye " + newUser.Name + "Have a great day!";
+                return response;
             }
-            else 
+            else
             {
-                return "Im not sure i Understand. Can you paraphrase";
+                return "i don't think i understand, could you please paraphrase?";
             }
        }
     }
