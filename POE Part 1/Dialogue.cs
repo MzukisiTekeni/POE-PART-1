@@ -5,6 +5,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
+using Figgle;
 
 namespace POE_Part_1
 {
@@ -22,13 +23,11 @@ namespace POE_Part_1
         public void StartChat()
         {
            
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write(chatbot.Name + ": ");
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("Hello " + user.Name + " Welcome to the chatbot");
+           
+            Console.WriteLine(FiggleFonts.Small.Render("Hello " + user.Name + " Welcome to the chatbot"));
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("CHAT STARTED");
+            Console.WriteLine("CHAT STARTED........");
             Console.WriteLine("Type exit to end the chat!");
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine();
@@ -47,7 +46,7 @@ namespace POE_Part_1
                     Console.Write(chatbot.Name + ": ");
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.WriteLine("Goodbye, "+user.Name);
-                    Console.ReadLine();
+                  
                     break;
                 }
                 string response = chatbot.Respond(userMessage,user);
@@ -60,8 +59,9 @@ namespace POE_Part_1
 
         public void EndChat()
         {
+            Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("CHAT ENDED");
+            Console.WriteLine("CHAT ENDED........");
             Console.ForegroundColor= ConsoleColor.White;
         }
     }

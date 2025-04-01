@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Figgle;
+using System.Media;
+
 
 namespace POE_Part_1
 {
@@ -10,16 +13,13 @@ namespace POE_Part_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(@"
- _____       _                                        _ _            ___                                             
-/  __ \     | |                                      (_) |          / _ \                                            
-| /  \/_   _| |__   ___ _ __ ___  ___  ___ _   _ _ __ _| |_ _   _  / /_\ \_      ____ _ _ __ ___ _ __   ___  ___ ___ 
-| |   | | | | '_ \ / _ \ '__/ __|/ _ \/ __| | | | '__| | __| | | | |  _  \ \ /\ / / _` | '__/ _ \ '_ \ / _ \/ __/ __|
-| \__/\ |_| | |_) |  __/ |  \__ \  __/ (__| |_| | |  | | |_| |_| | | | | |\ V  V / (_| | | |  __/ | | |  __/\__ \__ \
- \____/\__, |_.__/ \___|_|  |___/\___|\___|\__,_|_|  |_|\__|\__, | \_| |_/ \_/\_/ \__,_|_|  \___|_| |_|\___||___/___/
-        __/ |                                                __/ |                                                   
-       |___/                                                |___/                                                    
-");
+            SoundPlayer soundPlayer = new SoundPlayer("C:\\Users\\RC_Student_lab\\Desktop\\Final\\POE-PART-1\\POE Part 1\\MzuraVoice.wav");
+            soundPlayer.Load();
+            soundPlayer.PlaySync();
+            Console.WriteLine("Sound finished playing........");
+
+            Console.WriteLine(FiggleFonts.Standard.Render("Cybersecurity Awareness"));
+
             Console.Write("Please enter your name: ");
             string userName = Console.ReadLine();
 
@@ -27,6 +27,7 @@ namespace POE_Part_1
             Chatbot chatbot = new Chatbot("Chatbot");
             Dialogue dialogue = new Dialogue(user,chatbot);
             dialogue.StartChat();
+            dialogue.EndChat();
         }
     }
 }

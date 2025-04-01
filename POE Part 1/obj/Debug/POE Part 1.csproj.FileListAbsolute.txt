@@ -12,3 +12,6 @@ C:\Users\RC_Student_lab\Desktop\Final\POE-PART-1\POE Part 1\obj\Debug\POE Part 1
 C:\Users\RC_Student_lab\Desktop\Final\POE-PART-1\POE Part 1\obj\Debug\POE Part 1.csproj.CoreCompileInputs.cache
 C:\Users\RC_Student_lab\Desktop\Final\POE-PART-1\POE Part 1\obj\Debug\POE Part 1.exe
 C:\Users\RC_Student_lab\Desktop\Final\POE-PART-1\POE Part 1\obj\Debug\POE Part 1.pdb
+C:\Users\RC_Student_lab\Desktop\Final\POE-PART-1\POE Part 1\bin\Debug\Figgle.dll
+C:\Users\RC_Student_lab\Desktop\Final\POE-PART-1\POE Part 1\bin\Debug\Figgle.xml
+C:\Users\RC_Student_lab\Desktop\Final\POE-PART-1\POE Part 1\obj\Debug\POE Part 1.csproj.Up2Date
